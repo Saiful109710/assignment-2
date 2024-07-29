@@ -24,20 +24,46 @@ body{
 .btn-primary{
     color: white;
     background-color: orangered;
-    padding: 16px 40px;
+    /* padding: 16px 40px; */
+    width: 260px;
+    height: 60px;
     border: none;
     border-radius: 42px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
     
 }
+
+.container{
+    margin:0 auto;
+    width: 80%;
+}
+
+:root{
+    --primary-text-color:rgba(255, 255, 255, 0.5);
+}
+
 /* common style end here */
 
-/* header part style starts */
+/* ..............Header part style starts............................ */
+
 header{
-    margin: 2rem auto;
-    width: 85%;
-    background: linear-gradient(180deg,rgba(18, 17, 17, 0.1),rgba(255,255,255,0.1) 100%)
+    background: linear-gradient(360deg,rgba(18, 17, 17, 0.1),rgba(255,255,255,0.1) 100%);
+    
+    
+   
+
+    
+}
+
+
+.header-container{
+   
+    padding-top: 3rem;
+   
+    
+   
     
 }
 
@@ -91,9 +117,10 @@ header{
 .header-content-container{
     
     margin-top: 2rem;
-    display: flex;
-    gap: 80px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+   
 }
 
 .header-content{
@@ -120,25 +147,42 @@ header{
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--primary-text-color);
     margin-bottom: 32px;
 }
 
+.header-content-btn{
+    display: flex;
+    gap:15px;
+}
 .header-content-btn button:nth-child(2){
 
     background: transparent;
     border: 1px solid rgb(255, 255, 255);
-    margin-left: 15px;
+   
 }
 
 .header-image{
-    width: 350px;
+    
    
-    margin-right: 40px;
-    position: relative;
+   
+    
+    display: flex;
+    justify-content: flex-end;
+  
 }
+
+.head-img{
+    width: 335px;
+    position: relative;
+   
+}
+
 .header-image img{
-    width: 100%;
+    width: 335px;
+    
+  
+    
 }
 
 .header-card{
@@ -164,14 +208,30 @@ header{
 
 
 
-.header-card:nth-child(1){
-    bottom: 80px;
-    right: 250px;
+.header-card:nth-child(1) {
+    /* bottom: 63px; */
+    left: -108px;
+    top: 411px;
 }
 
-.header-card:nth-child(2){
-    top: 127px;
-    right: -77px;
+.header-card:nth-child(2) {
+    top: 120px;
+    right: -100px;
+}
+
+.header-card:nth-child(2) h2{
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.card-content p{
+    font-weight: 16px;
+    font-weight: 100;
+    color: rgba(255,255,255,0.6);
+    
+
+    
 }
 
 
@@ -181,5 +241,314 @@ header{
 
 
 
-/* header part style end */
+/* ....................header part style end...................... */
 
+
+/* ..................///////////////////...........Main Part style Starts here................////////////////////////// */
+
+        /* ......habit section starts ........*/
+
+            #habit{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 6rem;
+                
+                gap: 3rem;
+                
+            }
+
+            .habit-section-heading{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                max-width: 650px;
+                
+            }
+            .habit-section-heading h1{
+                font-size: 2.5rem;
+                font-weight: 900;
+                text-align: center;
+
+            }
+            .habit-section-heading p{
+                font-size: 1rem;
+                color: var(--primary-text-color);
+                text-align: center;
+                line-height: 26px;
+
+            }
+
+            .habit-section-card{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 2rem;
+                
+                
+                
+            }
+
+            .habit-card{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .habit-card img{
+                border-radius: 50%;
+                margin-bottom: 1.5rem;
+            }
+
+            .habit-card h3{
+                text-align: center;
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+            }
+
+            .habit-card p{
+                color: var(--primary-text-color);
+                font-size: 1rem;
+                text-align: center;
+                
+            }
+
+            
+
+
+
+        /* ........habit section ends .......... */
+
+        /* .........Run section starts........... */
+
+            #run{
+                margin-top: 6rem;
+                display: grid;
+                
+                grid-template-columns: 1.2fr 0.8fr;
+                gap: 2rem;
+                background-color:rgba(255,255,255,0.2);
+                padding: 1.5rem;
+                border-radius: 16px;
+                
+                
+            }
+            .run-content{
+                max-width: 500px;
+                margin-top: 20px;
+            }
+
+            .run-content h1 {
+                font-size: 2rem;
+                font-weight: 700;
+                max-width: 290px;
+            }
+
+            .run-content p{
+                color: var(--primary-text-color);
+                
+                line-height: 26px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                
+
+            }
+
+
+
+          
+                
+                
+
+            
+            .run-image img{
+                width: 450px;
+                height: 320px;
+                border-radius: 16px;
+            }
+        /* .........Run section ends........... */
+
+
+/* ..................///////////////////...........Main Part style Ends here................////////////////////////// */
+
+
+
+/* responsive for different device  starts here*/
+
+/*................................... mobile device....................................... */
+
+@media screen and (max-width:576px){
+
+    #navbar .nav-item{
+        display: none;
+    }
+
+    .header-content-container{
+        /* flex-direction: column; */
+        grid-template-columns: 1fr;
+    }
+    .header-content {
+       
+        margin-top: 0;
+       
+    }
+    .header-content h1 {
+        font-size: 2.8rem;
+       
+        line-height: 105%;
+        
+    }
+    .header-content-btn{
+            justify-content: center;
+            align-items: center;
+    }
+    .btn-primary {
+       
+        
+        width: 100%;
+      
+        font-size: 17px;
+      
+       
+    }
+
+    .header-image{
+        
+        width: 100%;
+       
+       
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+
+        .header-card {
+            width: 160px;
+            height: 85px;
+        }
+      
+       .header-card:nth-child(1) {
+        bottom: 232px;
+        left: -15px;
+         }
+
+         .header-card:nth-child(2) {
+            top: 30px;
+            right: 0px;
+        }
+
+    .header-card .card-box {
+        width: 30px;
+        height: 30px;
+        
+       
+    }
+
+    .header-card:nth-child(2) h2 {
+        font-size: 35px;
+        
+    }
+
+    /* .......main......part .....*/
+
+            #habit{
+                margin-top: 2rem;
+            }
+            .habit-section-heading h1{
+                font-size: 2rem;
+            }
+            .habit-section-card{
+                grid-template-columns: 1fr;
+            }
+            .habit-card p{
+                width: 250px;
+            }
+
+            #run{
+                grid-template-columns: 1fr;
+                margin-top: 2rem;
+            }
+            .run-content h1 {
+                font-size: 2.2rem;
+               font-weight: 700;
+            }
+            .run-content p {
+                
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+            .run-image img{
+                width: 100%;
+                height: 100%;
+            }
+            .run-btn{
+                width: 100%;
+            }
+          
+
+    /* .......main......part .....*/
+}
+
+/*................................... Mobile device....................................... */
+
+
+/* /////////////....................Tablet or medium device...........///////////////////*/
+
+@media  screen and (min-width:576px) and (max-width:992px){
+        .header-content-container{
+            grid-template-columns: 1fr;
+        }
+        .header-image{
+            justify-content: center;
+        }
+        .header-card:nth-child(1) {
+            bottom: 120px;
+            left: -65px;
+        }
+        .header-card:nth-child(2) {
+            top: 55px;
+            right: -60px;
+        }
+
+        /*......... main... part.......... */
+            .habit-section-card{
+                grid-template-columns: 1fr 1fr;
+            }
+            #run{
+                grid-template-columns: 1fr 1fr;
+                
+                
+
+            }
+            .run-image{
+                width: 100%;
+                border: 1px solid green;
+                display: flex;
+                justify-content: flex-end;
+                
+                
+            }
+            .run-image img{
+                width: 100%;
+                height: 100%;
+            }
+
+          
+
+        /* .........main....Part.......... */
+    
+}
+
+/* /////////////....................Tablet or medium device...........///////////////////*/
+
+
+
+
+/* responsive for mobile device  ends here*
