@@ -13,7 +13,7 @@
 
 body{
     font-family: "Inter", sans-serif;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     background: black;
     color: white;
@@ -499,6 +499,112 @@ header{
             
 
          /* .....Training section starts here ....*/
+
+         /* .......BMI section starts here......... */
+            #bmi{
+                margin-top: 6rem;
+            }
+            .bmi-heading{
+               max-width: 650px;
+               margin: 0 auto 88px;
+
+            }
+
+            .bmi-heading h1{
+                margin-bottom: 20px;
+            }
+
+            .bmi-container{
+                max-width: 1600px;
+                background: rgb(34, 34, 34)
+            }
+            
+            .bmi-calculator-container{
+                
+                 display: grid;
+                 grid-template-columns: 1fr 1fr;
+                 padding: 50px 10px;
+                 
+                 /* box-sizing: border-box; */
+                  
+            }
+
+            .bmi-chart>h3{
+                font-size: 2.1rem;
+                
+            }
+
+
+
+            .bmi-chart-table table,th,td{
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-collapse: collapse;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            .bmi-chart-table th{
+                color: white;
+                font-size: 18px;
+            }
+            .bmi-chart-table table{
+                width: 70%;
+                margin-top: 60px;
+                
+            }
+            .bmi-chart-table th,td{
+                padding: 20px;
+            }
+
+            .bmi-calculator>h3{
+                font-size: 2.1rem;
+                margin-bottom: 16px;
+            }
+            .bmi-calculator>p{
+                font-size: 18px;
+            }
+
+            .bmi-calculator form{
+                
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 13px;
+                margin-top: 50px;
+                
+                
+            }
+
+            .bmi-calculator>button{
+                margin-top: 40px;
+            }
+          
+
+            form input,select{
+                /* padding: 12px 40px 12px 20px; */
+                
+                height: 55px;
+                background: rgba(255,255,255,0.1);
+                border: none;
+                border-radius: 8px;
+                
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 18px;
+                padding: 10px;
+                
+                
+            }
+
+           form select:last-child{
+                grid-column: span 2;
+            }
+
+            
+           
+
+         
+
+
+
+         /* ........BMI section ends here ........*/
 
 
 /* ..................///////////////////...........Main Part style Ends here................////////////////////////// */
