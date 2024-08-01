@@ -625,6 +625,10 @@ header{
                     text-align: center;
                 }
 
+                .team-heading>h1{
+                    margin-bottom: 20px;
+                }
+
                 .team-profile{
                     display: grid;
                     grid-template-columns: repeat(3,1fr);
@@ -826,6 +830,14 @@ header{
             .bmi-calculator>h3{
                 font-size: 1.7rem;
             }
+
+            .team-heading>h1{
+                font-size: 2rem;
+            }
+
+            .team-profile{
+                grid-template-columns: 1fr;
+            }
           
           
 
@@ -879,6 +891,10 @@ header{
             .bmi-calculator-container{
                 grid-template-columns: 1fr;
                 gap: 50px;
+            }
+
+            .team-profile{
+                grid-template-columns: 1fr 1fr;
             }
 
            
