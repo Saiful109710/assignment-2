@@ -44,6 +44,23 @@ body{
     --primary-text-color:rgba(255, 255, 255, 0.5);
 }
 
+.section-heading-primary{
+
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.section-text-primary{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+
 /* common style end here */
 
 /* ..............Header part style starts............................ */
@@ -269,16 +286,16 @@ header{
                 
             }
             .habit-section-heading h1{
-                font-size: 2.5rem;
-                font-weight: 900;
+                
+                
                 text-align: center;
 
             }
             .habit-section-heading p{
-                font-size: 1rem;
-                color: var(--primary-text-color);
+                
+                
                 text-align: center;
-                line-height: 26px;
+                
 
             }
 
@@ -344,15 +361,12 @@ header{
             }
 
             .run-content h1 {
-                font-size: 2rem;
-                font-weight: 700;
-                max-width: 290px;
+              
+                /* max-width: 290px; */
             }
 
             .run-content p{
-                color: var(--primary-text-color);
                 
-                line-height: 26px;
                 margin-top: 20px;
                 margin-bottom: 40px;
                 
@@ -372,6 +386,119 @@ header{
                 border-radius: 16px;
             }
         /* .........Run section ends........... */
+
+        /* ...Training section starts here...... */
+
+            #training{
+                margin-top: 6rem;
+            }
+
+            .training-content{
+                max-width: 600px;
+                margin-bottom: 4rem;
+            }
+
+            .training-content h1{
+                margin-bottom: 1.3rem;
+            }
+
+            .image-card-container img{
+                width: 100%;
+                height:100%;
+                object-fit:cover;
+            }
+            .image-card{
+                height: 250px;
+            }
+
+            .image-card-container>.row-1{
+                display: grid;
+                grid-template-columns: 0.7fr 1.5fr 0.8fr;
+            }
+
+            .image-card-container>.row-2{
+                display: grid;
+                grid-template-columns: 1.2fr 0.8fr 1fr;
+            }
+
+          
+
+            
+            .image-overlay {
+                position: relative;
+            }
+            .image-overlay::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 10;
+                width: 100%;
+                height: 100%;
+                 /* Red overlay with 50% opacity */
+                pointer-events: none;
+            }
+            .row-1 .image-overlay:nth-child(1)::before{
+                background: rgba(6, 255, 210, 0.5);
+            }
+            .row-1 .image-overlay:nth-child(2)::before{
+                background: rgba(255, 0, 0, 0.3);
+            }
+            .row-1 .image-overlay:nth-child(3)::before{
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .row-2 .image-overlay:nth-child(1)::before{
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .row-2 .image-overlay:nth-child(2)::before{
+                background: rgba(66, 255, 0, 0.3)
+            }
+            .row-2 .image-overlay:nth-child(3)::before{
+                background: rgba(0, 71, 255, 0.3);
+            }
+
+            .image-card{
+                position: relative;
+            }
+
+            .row-1 .image-card:nth-child(1)>p{
+                position: absolute;
+                bottom: 20px;
+                left: 25px;
+            }
+            .row-1 .image-card:nth-child(2)>p{
+                position: absolute;
+                top: 20px;
+                left: 25px;
+            }
+            .row-1 .image-card:nth-child(3)>p{
+                position: absolute;
+                bottom: 20px;
+                right: 25px;
+            }
+
+            .row-2 .image-card:nth-child(1)>p{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+            }
+            .row-2 .image-card:nth-child(2)>p{
+                position: absolute;
+                bottom: 20px;
+                left: 10px;
+            }
+            .row-2 .image-card:nth-child(3)>p{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+
+
+            
+
+         /* .....Training section starts here ....*/
 
 
 /* ..................///////////////////...........Main Part style Ends here................////////////////////////// */
@@ -491,6 +618,31 @@ header{
             .run-btn{
                 width: 100%;
             }
+
+            #training .training-content h1{
+                font-size: 2rem;
+            }
+
+            #training .row-1{
+                grid-template-columns: 1.1fr 0.9fr;
+                
+            }
+
+            .image-card{
+                height: 200px;
+            }
+
+            .row-1 .image-card:nth-child(3){
+                grid-column: span 2;
+            }
+            #training .row-2{
+                grid-template-columns: 0.9fr 1.1fr;
+
+            }
+
+            .row-2 .image-card:nth-child(3){
+                grid-column: span 2;
+            }
           
 
     /* .......main......part .....*/
@@ -539,6 +691,8 @@ header{
                 width: 100%;
                 height: 100%;
             }
+
+           
 
           
 
