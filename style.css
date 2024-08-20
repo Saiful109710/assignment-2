@@ -709,7 +709,7 @@ header{
                     justify-content: center;
                     align-items: center;
                     border-radius: 20px;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    box-shadow: rgba(172, 157, 157, 0.1) 0px 5px 15px;
                     
                 
                 }
@@ -722,7 +722,7 @@ header{
                 }
 
                 .gym-card .section-text-primary{
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                 }
 
                 #gym .form{
@@ -734,7 +734,7 @@ header{
 
                 #gym .form input{
                     width: 70%;
-                    height: 100px;
+                    height: 85px;
                     background-color:rgba(255, 255, 255, 0.1);
                     text-align: center;
                     font-size: 18px;
@@ -748,7 +748,7 @@ header{
                     border: none;
                     border-radius: 0 16px 16px 0;
                     background-color: rgb(235, 235, 235);
-                    height: 100px;
+                    height: 85px;
                     width: 150px;
                     margin-top: 10px;
 
@@ -984,11 +984,20 @@ header{
                 grid-column: span 2;
             }
 
-          
+            
+            
 
             #bmi .bmi-calculator-container{
                 grid-template-columns: 1fr;
                 gap: 50px;
+            }
+
+            .bmi-heading .section-heading-primary{
+                font-size: 2rem;
+            }
+
+            .bmi-heading .section-text-primary{
+                font-size: 1rem;
             }
 
             .bmi-chart-table table{
@@ -1017,7 +1026,9 @@ header{
             .team-profile{
                 grid-template-columns: 1fr;
             }
-
+                .gym-heading .section-heading-primary{
+                    font-size: 2rem;
+                }
                 .gym-card-container{
                     grid-template-columns: 1fr;
                     gap: 10px;
@@ -1039,6 +1050,14 @@ header{
             #footer-container{
                 grid-template-columns: 1fr;
                 
+            }
+            .footer-heading .navlogo>h2 {
+                font-size: 4.5rem;
+                
+            }
+
+            .footer-heading p{
+                font-size: 1rem;
             }
 
             .footer-links{
